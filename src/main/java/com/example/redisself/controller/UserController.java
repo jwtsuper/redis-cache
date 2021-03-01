@@ -25,4 +25,9 @@ public class UserController {
     public User updateUser(@RequestBody User user) {
        return cacheUser.updateUser(user);
     }
+    @PostMapping("/deleteUser")
+    @ApiOperation(value = "修改", notes = "修改")
+    public User deleteUser(@RequestBody User user) {
+        return cacheUser.updateUser(user);
+    }
 }
