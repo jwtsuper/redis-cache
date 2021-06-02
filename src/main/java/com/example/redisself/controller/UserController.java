@@ -21,6 +21,7 @@ public class UserController {
 
     }
 
+
     @PostMapping("/updateUser")
     @ApiOperation(value = "修改", notes = "修改")
     public User updateUser(@RequestBody User user) {
