@@ -17,6 +17,7 @@ public class UserController {
     @PostMapping("/select")
     @ApiOperation(value = "自定义查找", notes = "查找")
     public User select(@RequestBody User user) {
+        System.out.println("aa");
         return cacheUser.selectById(user);
 
     }
